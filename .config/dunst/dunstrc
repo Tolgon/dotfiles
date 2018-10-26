@@ -42,12 +42,12 @@
 [urgency_normal]
     background = "#1c1c1c"
     foreground = "#ffffff"
-    timeout = 20
+    timeout = 5
 
 [urgency_critical]
     background = "#1c1c1c"
     foreground = "#ffffff"
-    timeout = 0
+    timeout = 5
 
 [Discord]
 	appname = Discord
