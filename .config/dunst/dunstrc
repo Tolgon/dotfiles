@@ -53,4 +53,4 @@
 	appname = Discord
 	new_icon = discord
     format = "<b>%s</b>\n%b"
-	script = .scripts/discord_urgency.sh
+	script = .config/dunst/discord_urgency.sh
