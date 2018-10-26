@@ -1,1 +1,0 @@
-/home/tolga/.zprezto/runcoms/zshrc
