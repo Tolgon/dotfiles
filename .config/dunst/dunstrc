@@ -3,7 +3,7 @@
     markup = yes
 	max_icon_size = 32
 	icon_position = left
-	icon_path = /usr/share/icons/Papirus-Dark/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/apps/:/usr/share/icons/Papirus-Dark/16x16/devices/
+	icon_path = /usr/share/icons/Papirus-Dark/32x32/status/:/usr/share/icons/Papirus-Dark/32x32/apps/:/usr/share/icons/Papirus-Dark/32x32/devices/
     format = "<b>%a: %s</b>\n%b"
     sort = yes
     indicate_hidden = yes
