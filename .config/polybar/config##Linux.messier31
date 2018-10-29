@@ -1,6 +1,7 @@
-; polybar config / tolga
-;
-;
+; polybar config
+; tolga
+; messier31
+; laptop
 
 [settings]
 screenchange-reload = true
