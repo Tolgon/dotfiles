@@ -1,6 +1,7 @@
-; polybar config / tolga
-;
-;
+; polybar config
+; tolga
+; messier62
+; desktop / vm
 
 [settings]
 screenchange-reload = true
