@@ -33,7 +33,6 @@ foreground = ${colors.foreground}
 font-0 = Font Awesome:size=9:antialias=true;2
 font-1 = Source Sans Pro:size=9:antialias=true:weight=regular;2
 font-2 = RobotoMono Nerd Font:size=13:antialias=true:weight=regular;3
-font-3 = FuraMono Nerd Font:size=9:antialias=true:weight=regular;2
 modules-left = i3 rightArrowGrey xwindow
 modules-center =
 modules-right = leftArrowGrey backlight volume battery wired-network wireless-network arrow2 date
