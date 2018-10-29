@@ -21,4 +21,3 @@ bindkey -a 'yy' yanktoclipboard
 bindkey -a 'p' pastefromclipboard
 
 # alias
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
