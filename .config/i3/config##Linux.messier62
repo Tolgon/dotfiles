@@ -20,7 +20,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec rofi -show drun -show-icons
+bindsym $mod+d exec dmenu-run
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -161,5 +161,4 @@ bindsym --release Print exec --no-startup-id "maim -p 0 -c 0.96,0.5,0.09 $HOME/M
 bindsym --release Shift+Print exec --no-startup-id "maim -s -p 0 -c 0.96,0.5,0.09 $HOME/Media/Screenshot/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
 
 # executes
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh #polybar
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent #geoclue
