@@ -21,3 +21,4 @@ bindkey -a 'yy' yanktoclipboard
 bindkey -a 'p' pastefromclipboard
 
 # alias
+alias devtmux='/home/tolga/.config/devtmux.sh'
