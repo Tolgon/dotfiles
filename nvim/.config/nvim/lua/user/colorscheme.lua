@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme iceberg
+  colorscheme tokyonight-night
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
 endtry
