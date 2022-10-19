@@ -32,7 +32,7 @@ window:
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark`
   # and `light`. Set this to `None` to use the default theme variant.
-  gtk_theme_variant: dark
+  decorations_theme_variant: dark
 
 
 # If `true`, bold text is drawn using the bright color variants.
@@ -50,21 +50,22 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: "Pragmata Pro Mono"
+    family: PragmataPro Mono
     style: Regular
 
   # Bold font face
   bold:
-    family: "Pragmata Pro Mono"
+    family: PragmataPro Mono
     style: Bold
 
   # Italic font face
   italic:
-    family: "Pragmata Pro Mono"
+    family: PragmataPro Mono
+    style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: "Pragmata Pro Mono"
+    family: PragmataPro Mono
     style: Bold Italic
 
   # Point size
