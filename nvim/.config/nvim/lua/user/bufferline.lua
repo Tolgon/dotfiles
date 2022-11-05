@@ -17,11 +17,9 @@ bufferline.setup {
             style = "icon",
             icon = "▎",
         },
-        -- buffer_close_icon = "",
         buffer_close_icon = '',
         modified_icon = "●",
         close_icon = "",
-        -- close_icon = '',
         left_trunc_marker = "",
         right_trunc_marker = "",
         --- name_formatter can be used to change the buffer's label in the bufferline.
@@ -151,7 +149,7 @@ bufferline.setup {
         },
 
         separator = {
-    fg = { attribute = "bg", highlight = "TabLine" },
+            fg = { attribute = "bg", highlight = "TabLine" },
             bg = { attribute = "bg", highlight = "TabLine" },
         },
         separator_selected = {
