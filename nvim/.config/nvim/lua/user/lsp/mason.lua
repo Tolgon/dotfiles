@@ -2,7 +2,7 @@ local servers = {
     "sumneko_lua",
     "cssls",
     "html",
-    "emmet-ls",
+    "emmet_ls",
     "tsserver",
     "bashls",
     "jsonls",

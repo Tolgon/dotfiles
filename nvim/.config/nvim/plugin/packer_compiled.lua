@@ -129,11 +129,6 @@ _G.packer_plugins = {
     path = "/home/tolga/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["iceberg.vim"] = {
-    loaded = true,
-    path = "/home/tolga/.local/share/nvim/site/pack/packer/start/iceberg.vim",
-    url = "https://github.com/cocopon/iceberg.vim"
-  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/tolga/.local/share/nvim/site/pack/packer/start/impatient.nvim",

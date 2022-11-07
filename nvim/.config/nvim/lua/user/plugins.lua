@@ -60,7 +60,6 @@ return packer.startup(function(use)
     use({ "rcarriga/nvim-notify" })
 
     -- Colorschemes
-    use( "cocopon/iceberg.vim" )
     use( "folke/tokyonight.nvim" )
 
     -- cmp plugins
