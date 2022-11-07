@@ -37,10 +37,13 @@ local options = {
 }
 
 vim.opt.shortmess:append "c"
+-- enable navic in winbar
+vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 
 for k, v in pairs(options) do
     vim.opt[k] = v
 end
+
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]

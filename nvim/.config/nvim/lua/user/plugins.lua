@@ -55,9 +55,9 @@ return packer.startup(function(use)
     use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
     use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
     use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
-    use({ "folke/which-key.nvim" })
-    use({ "p00f/nvim-ts-rainbow" })
-    use({ "rcarriga/nvim-notify" })
+    use { "folke/which-key.nvim" }
+    use { "p00f/nvim-ts-rainbow" }
+    use { "rcarriga/nvim-notify" }
 
     -- Colorschemes
     use( "folke/tokyonight.nvim" )
@@ -80,6 +80,7 @@ return packer.startup(function(use)
     use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
     use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
     use { "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" }
+    use { "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" }
 
     -- Telescope
     use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }

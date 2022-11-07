@@ -86,6 +86,14 @@ M.on_attach = function(client, bufnr)
         return
     end
     illuminate.on_attach(client)
+    
+    if client.server_capabilities.documentSymbolProvider then
+        local navic = require "nvim-navic"
+        navic.setup {
+            highlight = true
+        }
+        navic.attach(client, bufnr)
+    end
 end
 
 return M
