@@ -1,3 +1,18 @@
+-- stop snippet indent jumping when cursor returns to normal mode
+vim.api.nvim_create_autocmd({ "CursorHold" }, {
+  callback = function()
+    local status_ok, luasnip = pcall(require, "luasnip")
+    if not status_ok then
+      return
+    end
+    if luasnip.expand_or_jumpable() then
+      -- ask maintainer for option to make this silent
+      -- luasnip.unlink_current()
+      vim.cmd [[silent! lua require("luasnip").unlink_current()]]
+    end
+  end,
+})
+
 vim.cmd [[
   augroup _general_settings
     autocmd!
