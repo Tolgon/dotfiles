@@ -56,13 +56,13 @@ return packer.startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
   use { "folke/which-key.nvim" }
-  use { "p00f/nvim-ts-rainbow" }
   use { "rcarriga/nvim-notify" }
   use { "andweeb/presence.nvim" }
 
 
   -- Colorschemes
   use( "folke/tokyonight.nvim" )
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- cmp plugins
   use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
@@ -88,7 +88,8 @@ return packer.startup(function(use)
   use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
 
   -- Treesitter
-  use { "nvim-treesitter/nvim-treesitter", commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac" }
+  use { "nvim-treesitter/nvim-treesitter", commit = "8a261e32ec50979c367448598844af2be0ed05f7" }
+  use { "p00f/nvim-ts-rainbow", commit = "064fd6c0a15fae7f876c2c6dd4524ca3fad96750" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
