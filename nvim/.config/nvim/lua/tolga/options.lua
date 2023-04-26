@@ -36,14 +36,6 @@ local options = {
     guifont = "monospace:h17",                  -- the font used in graphical neovim applications
 }
 
-vim.opt.shortmess:append "c"
--- enable navic in winbar
--- vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
-
 for k, v in pairs(options) do
     vim.opt[k] = v
 end
-
-vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set iskeyword+=-]]
-vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work

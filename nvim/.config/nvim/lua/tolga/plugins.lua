@@ -1,3 +1,4 @@
+-- Plugin manager used: 'folke/lazy.nvim'
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -11,7 +12,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Load the plugins in this object
 local plugins = {
+
+    -- General UI
     {
         "folke/tokyonight.nvim",
         lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -21,19 +25,21 @@ local plugins = {
             vim.cmd([[colorscheme tokyonight-night]])
         end,
     },
-    {
-        -- icons required by plugins like nvim-tree and bufferline
-        'nvim-tree/nvim-web-devicons'
-    },
-    {
-        'nvim-tree/nvim-tree.lua',
-        dependencies = 'nvim-tree/nvim-web-devicons'
-    },
+    { 'nvim-tree/nvim-web-devicons' }, -- A bunch of plugins use this.
     {
         'akinsho/bufferline.nvim',
         version = "v3.*",
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
+
+    -- File system
+    {
+        'nvim-tree/nvim-tree.lua',
+        dependencies = 'nvim-tree/nvim-web-devicons'
+    },
+
+    -- Neovim helpers.
+    { 'folke/which-key.nvim' }
 
 }
 

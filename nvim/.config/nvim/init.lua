@@ -1,1 +1,1 @@
-require "cfg"
+require "tolga"
