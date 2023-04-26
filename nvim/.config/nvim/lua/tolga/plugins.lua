@@ -26,6 +26,7 @@ local plugins = {
         end,
     },
     { 'nvim-tree/nvim-web-devicons' }, -- A bunch of plugins use this.
+    { 'goolord/alpha-nvim' }, -- Dashboard
     {
         'akinsho/bufferline.nvim',
         version = "v3.*",

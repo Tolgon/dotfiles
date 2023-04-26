@@ -1,5 +1,10 @@
+-- Core neovim options
 require "tolga.options"
+
+-- Plugins
 require "tolga.plugins"
+
+require "tolga.alpha"
 require "tolga.nvim-tree"
 require "tolga.bufferline"
 require "tolga.which-key"
