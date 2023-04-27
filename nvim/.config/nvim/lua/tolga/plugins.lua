@@ -40,10 +40,11 @@ local plugins = {
     { 'lukas-reineke/indent-blankline.nvim' },
     { 'rcarriga/nvim-notify' },
     { 'RRethy/vim-illuminate' },
+    -- End UI
 
-    -- Autopairs, powerful tag closing tool { ( etc
-    { "windwp/nvim-autopairs" },
-
+    -- Utils
+    { "windwp/nvim-autopairs" }, -- Autopairs, powerful tag closing tool { ( ' etc
+    { 'numtostr/comment.nvim' }, -- Comment tool gcc etc
     -- Telescope
     {
         'nvim-telescope/telescope.nvim',
