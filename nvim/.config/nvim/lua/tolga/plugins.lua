@@ -26,14 +26,15 @@ local plugins = {
         end,
     },
     { 'NvChad/nvim-colorizer.lua' }, -- Highlight colors of # hex numbers
-    { 'akinsho/toggleterm.nvim' },
-    { 'lukas-reineke/indent-blankline.nvim' },
     { 'goolord/alpha-nvim' }, -- Dashboard
     {
         'akinsho/bufferline.nvim',
         version = "v3.*",
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
+    { 'akinsho/toggleterm.nvim' },
+    { 'lukas-reineke/indent-blankline.nvim' },
+    { 'rcarriga/nvim-notify' },
 
     -- Telescope
     {

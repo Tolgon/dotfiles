@@ -4,12 +4,11 @@ require "tolga.options"
 -- Plugins
 require "tolga.plugins"
 
-require "tolga.alpha"
-require "tolga.nvim-tree"
-require "tolga.bufferline"
+-- UI directory
+require "tolga.ui"
+
 require "tolga.which-key"
 require "tolga.telescope"
-require "tolga.indentline"
 require "tolga.toggleterm"
 
 -- Load last to ensure none gets overwritten
