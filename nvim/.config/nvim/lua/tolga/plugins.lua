@@ -39,6 +39,10 @@ local plugins = {
     { 'akinsho/toggleterm.nvim' },
     { 'lukas-reineke/indent-blankline.nvim' },
     { 'rcarriga/nvim-notify' },
+    { 'RRethy/vim-illuminate' },
+
+    -- Autopairs, powerful tag closing tool { ( etc
+    { "windwp/nvim-autopairs" },
 
     -- Telescope
     {

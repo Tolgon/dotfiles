@@ -11,6 +11,7 @@ require "tolga.ui"
 require "tolga.lang"
 
 require "tolga.which-key"
+require "tolga.autopairs"
 require "tolga.telescope"
 require "tolga.toggleterm"
 
