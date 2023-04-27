@@ -32,6 +32,10 @@ local plugins = {
         version = "v3.*",
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
+    {
+        'nvim-tree/nvim-tree.lua',
+        dependencies = 'nvim-tree/nvim-web-devicons'
+    },
     { 'akinsho/toggleterm.nvim' },
     { 'lukas-reineke/indent-blankline.nvim' },
     { 'rcarriga/nvim-notify' },
@@ -45,10 +49,13 @@ local plugins = {
         }
     },
 
-    -- File system
+    -- Language
     {
-        'nvim-tree/nvim-tree.lua',
-        dependencies = 'nvim-tree/nvim-web-devicons'
+        'nvim-treesitter/nvim-treesitter',
+        dependencies = {
+            'nvim-treesitter/nvim-treesitter-textobjects',
+            'nvim-treesitter/playground'
+        }
     },
 
     -- Neovim helpers

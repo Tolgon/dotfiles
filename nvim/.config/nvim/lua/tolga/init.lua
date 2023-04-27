@@ -7,6 +7,9 @@ require "tolga.plugins"
 -- UI directory
 require "tolga.ui"
 
+-- LSP, completion & Treesitter
+require "tolga.lang"
+
 require "tolga.which-key"
 require "tolga.telescope"
 require "tolga.toggleterm"
