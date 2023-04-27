@@ -25,12 +25,23 @@ local plugins = {
             vim.cmd([[colorscheme tokyonight-night]])
         end,
     },
-    { 'nvim-tree/nvim-web-devicons' }, -- A bunch of plugins use this.
+    { 'NvChad/nvim-colorizer.lua' }, -- Highlight colors of # hex numbers
+    { 'akinsho/toggleterm.nvim' },
+    { 'lukas-reineke/indent-blankline.nvim' },
     { 'goolord/alpha-nvim' }, -- Dashboard
     {
         'akinsho/bufferline.nvim',
         version = "v3.*",
         dependencies = 'nvim-tree/nvim-web-devicons'
+    },
+
+    -- Telescope
+    {
+        'nvim-telescope/telescope.nvim',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            'nvim-lua/popup.nvim',
+        }
     },
 
     -- File system
@@ -39,7 +50,7 @@ local plugins = {
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
 
-    -- Neovim helpers.
+    -- Neovim helpers
     { 'folke/which-key.nvim' }
 
 }
