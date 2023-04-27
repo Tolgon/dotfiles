@@ -1,0 +1,5 @@
+require "tolga.utils.telescope"
+require "tolga.utils.which-key"
+require "tolga.utils.comment"
+require "tolga.utils.toggleterm"
+require "tolga.utils.autopairs"

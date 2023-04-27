@@ -1,21 +1,14 @@
--- Core neovim options
-require "tolga.options"
-
--- Plugins
+-- Plugins file
 require "tolga.plugins"
 
 -- UI directory
 require "tolga.ui"
 
--- LSP, completion & Treesitter
+-- Language directory
 require "tolga.lang"
 
--- Utils
-require "tolga.which-key"
-require "tolga.autopairs"
-require "tolga.telescope"
-require "tolga.toggleterm"
-require "tolga.comment"
+-- Utils directory
+require "tolga.utils"
 
--- Load last to ensure none gets overwritten
-require "tolga.keymaps"
+-- Core neovim directory
+require "tolga.core"
