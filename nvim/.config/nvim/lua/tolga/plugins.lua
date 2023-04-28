@@ -32,6 +32,7 @@ local plugins = {
         version = "v3.*",
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
+    { 'nvim-lualine/lualine.nvim' },
     {
         'nvim-tree/nvim-tree.lua',
         dependencies = 'nvim-tree/nvim-web-devicons'
