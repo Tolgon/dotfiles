@@ -36,7 +36,6 @@ local plugins = {
         'nvim-tree/nvim-tree.lua',
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
-    { 'akinsho/toggleterm.nvim' },
     { 'lukas-reineke/indent-blankline.nvim' },
     { 'rcarriga/nvim-notify' },
     { 'RRethy/vim-illuminate' },
@@ -53,14 +52,23 @@ local plugins = {
             'nvim-lua/popup.nvim',
         }
     },
+    { 'akinsho/toggleterm.nvim' },
+    { 'brooth/far.vim' }, -- Find and replace tool
 
     -- Language
+    {
+        'williamboman/mason.nvim',
+        build = ":MasonUpdate" -- :MasonUpdate updates registry contents
+    },
+    { 'neovim/nvim-lspconfig' },
+    { 'williamboman/mason-lspconfig.nvim' },
     {
         'nvim-treesitter/nvim-treesitter',
         dependencies = {
             'nvim-treesitter/nvim-treesitter-textobjects',
             'nvim-treesitter/playground'
-        }
+        },
+        build = ":TSUpdate"
     },
 
     -- Neovim helpers

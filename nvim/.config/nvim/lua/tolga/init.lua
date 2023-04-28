@@ -1,3 +1,7 @@
+
+-- Core neovim directory
+require "tolga.core"
+
 -- Plugins file
 require "tolga.plugins"
 
@@ -9,6 +13,3 @@ require "tolga.lang"
 
 -- Utils directory
 require "tolga.utils"
-
--- Core neovim directory
-require "tolga.core"
