@@ -1,1 +1,2 @@
-require "tolga.lang.lsp.mason"
+require "tolga.lang.lsp.lsp-zero"
+require "tolga.lang.lsp.null-ls"

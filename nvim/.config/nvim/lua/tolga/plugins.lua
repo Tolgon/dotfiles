@@ -25,29 +25,28 @@ local plugins = {
             vim.cmd([[colorscheme tokyonight-night]])
         end,
     },
-    { 'NvChad/nvim-colorizer.lua' }, -- Highlight colors of # hex numbers
     { 'goolord/alpha-nvim' }, -- Dashboard
+    { 'NvChad/nvim-colorizer.lua' }, -- Highlight colors of # hex numbers, yoinked from nvchad
     {
-        'akinsho/bufferline.nvim',
+        'akinsho/bufferline.nvim', -- Tab like interface for buffers on top row
         version = "v3.*",
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
-    { 'nvim-lualine/lualine.nvim' },
+    { 'nvim-lualine/lualine.nvim' }, -- Informative line on bottom
     {
         'nvim-tree/nvim-tree.lua',
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
-    { 'lukas-reineke/indent-blankline.nvim' },
-    { 'rcarriga/nvim-notify' },
+    { 'lukas-reineke/indent-blankline.nvim' }, -- Show vertical lines on indents
+    { 'rcarriga/nvim-notify' }, -- Fancy popups in neovim
     { 'RRethy/vim-illuminate' },
-    -- End UI
 
     -- Utils
+    { 'moll/vim-bbye' }, -- Sane buffer closing :Bdelete
     { "windwp/nvim-autopairs" }, -- Autopairs, powerful tag closing tool { ( ' etc
     { 'numtostr/comment.nvim' }, -- Comment tool gcc etc
-    -- Telescope
     {
-        'nvim-telescope/telescope.nvim',
+        'nvim-telescope/telescope.nvim', -- Telescope fzf
         dependencies = {
             'nvim-lua/plenary.nvim',
             'nvim-lua/popup.nvim',
@@ -55,14 +54,30 @@ local plugins = {
     },
     { 'akinsho/toggleterm.nvim' },
     { 'brooth/far.vim' }, -- Find and replace tool
+    { 'folke/which-key.nvim' },
 
-    -- Language
+    -- Lsp, completion and formatting
     {
-        'williamboman/mason.nvim',
-        build = ":MasonUpdate" -- :MasonUpdate updates registry contents
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v2.x',
+        dependencies = {
+            {'neovim/nvim-lspconfig'},
+            {
+                'williamboman/mason.nvim',
+                build = function()
+                    pcall(vim.cmd, 'MasonUpdate')
+                end,
+            },
+            {'williamboman/mason-lspconfig.nvim'},
+
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},     -- Required
+            {'hrsh7th/cmp-nvim-lsp'}, -- Required
+            {'L3MON4D3/LuaSnip'},     -- Required
+        }
     },
-    { 'neovim/nvim-lspconfig' },
-    { 'williamboman/mason-lspconfig.nvim' },
+    { 'jose-elias-alvarez/null-ls.nvim' },
+    -- Treesitter
     {
         'nvim-treesitter/nvim-treesitter',
         dependencies = {
@@ -71,9 +86,6 @@ local plugins = {
         },
         build = ":TSUpdate"
     },
-
-    -- Neovim helpers
-    { 'folke/which-key.nvim' }
 
 }
 
