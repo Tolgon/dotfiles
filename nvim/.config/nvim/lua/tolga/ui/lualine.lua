@@ -191,9 +191,9 @@ require('lualine').setup {
                         -- info = ' ',
                         -- hint = ' ',
                         error = ' ',
-                        warn = ' ',
+                        warn = ' ',
                         info = ' ',
-                        hint = '󱤅 ',
+                        hint = ' ',
                         other = '󰠠 ',
                     },
                     diagnostics_color = {
