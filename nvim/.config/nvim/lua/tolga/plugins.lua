@@ -40,11 +40,16 @@ local plugins = {
 	{ "lukas-reineke/indent-blankline.nvim" }, -- Show vertical lines on indents
 	{ "rcarriga/nvim-notify" }, -- Fancy popups in neovim
 	{ "RRethy/vim-illuminate" },
+    { 
+        "SmiteshP/nvim-navic",
+        dependencies = "neovim/nvim-lspconfig"
+    },
 
 	-- Utils
 	{ "moll/vim-bbye" }, -- Sane buffer closing :Bdelete
 	{ "windwp/nvim-autopairs" }, -- Autopairs, powerful tag closing tool { ( ' etc
 	{ "numtostr/comment.nvim" }, -- Comment tool gcc etc
+	{ "JoosepAlviste/nvim-ts-context-commentstring" }, -- comments based on context
 	{
 		"nvim-telescope/telescope.nvim", -- Telescope fzf
 		dependencies = {
@@ -56,36 +61,31 @@ local plugins = {
 	{ "brooth/far.vim" }, -- Find and replace tool
 	{ "folke/which-key.nvim" },
 
-	-- Lsp, completion and formatting
-	{
-		"VonHeikemen/lsp-zero.nvim",
-		branch = "v2.x",
-		dependencies = {
-			{ "neovim/nvim-lspconfig" },
-			{
-				"williamboman/mason.nvim",
-				build = function()
-					pcall(vim.cmd, "MasonUpdate")
-				end,
-			},
-			{ "williamboman/mason-lspconfig.nvim" },
+    -- Lsp, completion and formatting
+    {
+        "williamboman/mason.nvim",
+        build = ":MasonUpdate",
+        dependencies = {
+            { "neovim/nvim-lspconfig" },
+            { "williamboman/mason-lspconfig.nvim" },
 
-			-- Autocompletion
-			{ "hrsh7th/nvim-cmp" }, -- Required
-			{ "hrsh7th/cmp-nvim-lsp" }, -- Required
-			{ "L3MON4D3/LuaSnip" }, -- Required
-		},
-	},
-	{ "jose-elias-alvarez/null-ls.nvim" },
-	-- Treesitter
-	{
-		"nvim-treesitter/nvim-treesitter",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter-textobjects",
-			"nvim-treesitter/playground",
-		},
-		build = ":TSUpdate",
-	},
+        },
+    },
+    -- Autocompletion
+    { "hrsh7th/nvim-cmp" }, -- Required
+    { "hrsh7th/cmp-nvim-lsp" }, -- Required
+    { "L3MON4D3/LuaSnip" }, -- Required
+    { "rafamadriz/friendly-snippets" }, -- Bunch of snippets to use
+    { "jose-elias-alvarez/null-ls.nvim" }, -- Formatting
+    -- Treesitter
+    {
+        "nvim-treesitter/nvim-treesitter",
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter-textobjects",
+            "nvim-treesitter/playground",
+        },
+        build = ":TSUpdate",
+    },
 }
 
 require("lazy").setup(plugins, opts)
