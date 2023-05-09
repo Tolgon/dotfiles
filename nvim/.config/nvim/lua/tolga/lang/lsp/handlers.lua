@@ -32,11 +32,11 @@ M.setup = function()
 		severity_sort = true,
 		float = {
 			focusable = true,
-			style = "minimal",
-			border = "rounded",
-			source = "always",
-			header = "",
-			prefix = "",
+			-- style = "minimal",
+			-- border = "rounded",
+			-- source = "always",
+			-- header = "",
+			-- prefix = "",
 		},
 	}
 
@@ -76,7 +76,7 @@ M.on_attach = function(client, bufnr)
 		client.server_capabilities.documentFormattingProvider = false
 	end
 
-	if client.name == "sumneko_lua" then
+	if client.name == "lua_ls" then
 		client.server_capabilities.documentFormattingProvider = false
 	end
 
