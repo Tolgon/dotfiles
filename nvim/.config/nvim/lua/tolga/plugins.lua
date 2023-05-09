@@ -40,10 +40,6 @@ local plugins = {
 	{ "lukas-reineke/indent-blankline.nvim" }, -- Show vertical lines on indents
 	{ "rcarriga/nvim-notify" }, -- Fancy popups in neovim
 	{ "RRethy/vim-illuminate" },
-	{
-		"SmiteshP/nvim-navic",
-		dependencies = "neovim/nvim-lspconfig",
-	},
 
 	-- Utils
 	{ "moll/vim-bbye" }, -- Sane buffer closing :Bdelete
@@ -70,6 +66,7 @@ local plugins = {
 			{ "williamboman/mason-lspconfig.nvim" },
 		},
 	},
+	{ "SmiteshP/nvim-navic", dependencies = "neovim/nvim-lspconfig" },
 	-- Autocompletion
 	{ "hrsh7th/nvim-cmp" }, -- Required
 	{ "hrsh7th/cmp-nvim-lsp" }, -- Required
