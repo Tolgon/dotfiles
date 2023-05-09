@@ -81,19 +81,6 @@ M.on_attach = function(client, bufnr)
 	end
 
 	lsp_keymaps(bufnr)
-	local status_ok, illuminate = pcall(require, "illuminate")
-	if not status_ok then
-		return
-	end
-	illuminate.on_attach(client)
-
-	if client.server_capabilities.documentSymbolProvider then
-		local navic = require("nvim-navic")
-		navic.setup({
-			highlight = true,
-		})
-		navic.attach(client, bufnr)
-	end
 end
 
 return M

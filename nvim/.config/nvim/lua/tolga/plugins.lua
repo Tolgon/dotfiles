@@ -40,10 +40,10 @@ local plugins = {
 	{ "lukas-reineke/indent-blankline.nvim" }, -- Show vertical lines on indents
 	{ "rcarriga/nvim-notify" }, -- Fancy popups in neovim
 	{ "RRethy/vim-illuminate" },
-    { 
-        "SmiteshP/nvim-navic",
-        dependencies = "neovim/nvim-lspconfig"
-    },
+	{
+		"SmiteshP/nvim-navic",
+		dependencies = "neovim/nvim-lspconfig",
+	},
 
 	-- Utils
 	{ "moll/vim-bbye" }, -- Sane buffer closing :Bdelete
@@ -61,31 +61,31 @@ local plugins = {
 	{ "brooth/far.vim" }, -- Find and replace tool
 	{ "folke/which-key.nvim" },
 
-    -- Lsp, completion and formatting
-    {
-        "williamboman/mason.nvim",
-        build = ":MasonUpdate",
-        dependencies = {
-            { "neovim/nvim-lspconfig" },
-            { "williamboman/mason-lspconfig.nvim" },
-
-        },
-    },
-    -- Autocompletion
-    { "hrsh7th/nvim-cmp" }, -- Required
-    { "hrsh7th/cmp-nvim-lsp" }, -- Required
-    { "L3MON4D3/LuaSnip" }, -- Required
-    { "rafamadriz/friendly-snippets" }, -- Bunch of snippets to use
-    { "jose-elias-alvarez/null-ls.nvim" }, -- Formatting
-    -- Treesitter
-    {
-        "nvim-treesitter/nvim-treesitter",
-        dependencies = {
-            "nvim-treesitter/nvim-treesitter-textobjects",
-            "nvim-treesitter/playground",
-        },
-        build = ":TSUpdate",
-    },
+	-- Lsp
+	{
+		"williamboman/mason.nvim",
+		build = ":MasonUpdate",
+		dependencies = {
+			{ "neovim/nvim-lspconfig" },
+			{ "williamboman/mason-lspconfig.nvim" },
+		},
+	},
+	-- Autocompletion
+	{ "hrsh7th/nvim-cmp" }, -- Required
+	{ "hrsh7th/cmp-nvim-lsp" }, -- Required
+	{ "L3MON4D3/LuaSnip" }, -- Required
+	{ "rafamadriz/friendly-snippets" }, -- Bunch of snippets to use
+	-- Formatting
+	{ "jose-elias-alvarez/null-ls.nvim" },
+	-- Treesitter
+	{
+		"nvim-treesitter/nvim-treesitter",
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter-textobjects",
+			"nvim-treesitter/playground",
+		},
+		build = ":TSUpdate",
+	},
 }
 
 require("lazy").setup(plugins, opts)
