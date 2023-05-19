@@ -32,11 +32,11 @@ M.setup = function()
 		severity_sort = true,
 		float = {
 			focusable = true,
-			-- style = "minimal",
-			-- border = "rounded",
-			-- source = "always",
-			-- header = "",
-			-- prefix = "",
+			style = "minimal",
+			border = "rounded",
+			source = "always",
+			header = "",
+			prefix = "",
 		},
 	}
 
@@ -83,7 +83,11 @@ M.on_attach = function(client, bufnr)
 	lsp_keymaps(bufnr)
 
 	if client.server_capabilities.documentSymbolProvider then
-		local navic = require("nvim-navic")
+		local status_navic_ok, navic = pcall(require, "nvim-navic")
+		if not status_navic_ok then
+			return
+		end
+
 		navic.setup({
 			highlight = true,
 		})

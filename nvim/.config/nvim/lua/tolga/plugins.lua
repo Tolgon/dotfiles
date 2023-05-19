@@ -39,7 +39,7 @@ local plugins = {
 	},
 	{ "lukas-reineke/indent-blankline.nvim" }, -- Show vertical lines on indents
 	{ "rcarriga/nvim-notify" }, -- Fancy popups in neovim
-	{ "RRethy/vim-illuminate" },
+	-- { "RRethy/vim-illuminate" },
 
 	-- Utils
 	{ "moll/vim-bbye" }, -- Sane buffer closing :Bdelete
@@ -73,9 +73,9 @@ local plugins = {
 	{ "hrsh7th/cmp-path" },
 	{ "saadparwaiz1/cmp_luasnip" },
 	{ "hrsh7th/cmp-nvim-lsp" },
-    -- Snippets to use with autocompletion
-	{ "L3MON4D3/LuaSnip" }, 
-	{ "rafamadriz/friendly-snippets" }, -- 
+	-- Snippets to use with autocompletion
+	{ "L3MON4D3/LuaSnip" },
+	{ "rafamadriz/friendly-snippets" }, --
 	-- Formatting
 	{ "jose-elias-alvarez/null-ls.nvim" },
 	-- Treesitter

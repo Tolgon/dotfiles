@@ -98,15 +98,12 @@ cmp.setup({
 		fields = { "kind", "abbr", "menu" },
 		format = function(entry, vim_item)
 			vim_item.kind = string.format("%s ", kind_icons[vim_item.kind]) -- This concatonates the icons with the name of the item kind
-			if entry.source.name == "nvim_lsp" then
-				vim_item.menu = "[" .. entry.source.source.client.name .. "]"
-			else
-				vim_item.menu = ({
-					luasnip = "[Snippet]",
-					buffer = "[Buffer]",
-					path = "[Path]",
-				})[entry.source.name]
-			end
+			vim_item.menu = ({
+                nvim_lsp = "[LSP]",
+				luasnip = "[Snippet]",
+				buffer = "[Buffer]",
+				path = "[Path]",
+			})[entry.source.name]
 			return vim_item
 		end,
 	},
