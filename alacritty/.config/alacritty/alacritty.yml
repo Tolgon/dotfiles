@@ -28,21 +28,25 @@ font:
   # Normal (roman) font face
   normal:
     family: JetBrainsMono Nerd Font
+    # family: Iosevka Nerd Font Mono
     style: Regular
 
     # Bold font face
   bold:
     family: JetBrainsMono Nerd Font
+    # family: Iosevka Nerd Font Mono
     style: Bold
 
     # Italic font face
   italic:
     family: JetBrainsMono Nerd Font
+    # family: Iosevka Nerd Font Mono
     style: Italic
 
     # Bold italic font face
   bold_italic:
     family: JetBrainsMono Nerd Font
+    # family: Iosevka Nerd Font Mono
     style: Bold Italic
 
     # Point size
