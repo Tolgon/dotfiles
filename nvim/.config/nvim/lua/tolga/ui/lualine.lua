@@ -122,7 +122,7 @@ local function get_git_compare()
     if get_current_buftype() == 'nofile' then return '' end
 
     -- Format for lualine.
-    return ' ' .. behind .. '  ' .. ahead
+    return ' ' .. behind .. '  ' .. ahead
 end
 
 -- Required to properly set the colors.
