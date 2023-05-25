@@ -6,6 +6,10 @@ window:
     columns: 90
     lines: 25
 
+  padding:
+    x: 10
+    y: 5
+
   decorations: full
   dynamic_title: true
   decorations_theme_variant: Dark
