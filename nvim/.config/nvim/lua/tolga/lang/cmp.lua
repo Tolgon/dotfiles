@@ -22,9 +22,9 @@ local kind_icons = {
 	Function = "󰊕",
 	Constructor = "",
 	Field = "",
-	Variable = "",
+	Variable = "󰫧",
 	Class = "",
-	Interface = "",
+	Interface = "",
 	Module = "",
 	Property = "",
 	Unit = "",
@@ -33,7 +33,7 @@ local kind_icons = {
 	Keyword = "",
 	Snippet = "",
 	Color = "󰃉",
-	File = "",
+	File = "󰈔",
 	Reference = "",
 	Folder = "",
 	EnumMember = "",
@@ -41,7 +41,7 @@ local kind_icons = {
 	Struct = "",
 	Event = "",
 	Operator = "",
-	TypeParameter = "",
+	TypeParameter = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -95,9 +95,9 @@ cmp.setup({
 		}),
 	},
 	formatting = {
-		fields = { "kind", "abbr", "menu" },
+		-- fields = { "kind", "abbr", "menu" },
 		format = function(entry, vim_item)
-			vim_item.kind = string.format("%s ", kind_icons[vim_item.kind]) -- This concatonates the icons with the name of the item kind
+			vim_item.kind = string.format("%s %s", kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
 			vim_item.menu = ({
                 nvim_lsp = "[LSP]",
 				luasnip = "[Snippet]",
