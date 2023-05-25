@@ -36,9 +36,6 @@ local options = {
     guifont = "monospace:h17",                  -- the font used in graphical neovim applications
 }
 
--- enable navic in winbar, for more options go to lang/lsp/handlers
-vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
-
 for k, v in pairs(options) do
     vim.opt[k] = v
 end

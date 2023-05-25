@@ -1,15 +1,10 @@
-
 -- Core neovim directory
-require "tolga.core"
-
+require("tolga.core")
 -- Plugins file
-require "tolga.plugins"
-
+require("tolga.plugins")
 -- UI directory
-require "tolga.ui"
-
+require("tolga.ui")
 -- Language directory
-require "tolga.lang"
-
+require("tolga.lang")
 -- Utils directory
-require "tolga.utils"
+require("tolga.utils")

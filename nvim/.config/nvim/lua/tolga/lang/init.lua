@@ -1,3 +1,3 @@
-require "tolga.lang.treesitter"
-require "tolga.lang.cmp"
-require "tolga.lang.lsp"
+require("tolga.lang.treesitter")
+require("tolga.lang.cmp")
+require("tolga.lang.lsp")

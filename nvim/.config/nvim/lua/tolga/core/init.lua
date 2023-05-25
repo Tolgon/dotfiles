@@ -1,2 +1,2 @@
-require "tolga.core.options"
-require "tolga.core.keymaps"
+require("tolga.core.options")
+require("tolga.core.keymaps")
