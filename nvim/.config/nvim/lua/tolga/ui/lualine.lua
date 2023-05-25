@@ -49,7 +49,7 @@ function M:get_current_filetype_icon()
 
     -- Fallback settings.
     if icon == nil and icon_highlight_group == nil then
-        icon = ''
+        icon = ''
         icon_highlight_group = 'DevIconDefault'
     end
 
