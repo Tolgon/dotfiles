@@ -48,6 +48,12 @@ local plugins = {
 			"nvim-lua/popup.nvim",
 		},
 	},
+	{
+		"ahmedkhalf/project.nvim",
+		config = function()
+			require("project_nvim").setup()
+		end,
+	},
 	{ "akinsho/toggleterm.nvim" },
 	{ "brooth/far.vim" }, -- Find and replace tool
 	{ "folke/which-key.nvim" },
