@@ -48,6 +48,7 @@ local plugins = {
 			"nvim-lua/popup.nvim",
 		},
 	},
+	{ "andweeb/presence.nvim" },
 	{
 		"ahmedkhalf/project.nvim",
 		config = function()
