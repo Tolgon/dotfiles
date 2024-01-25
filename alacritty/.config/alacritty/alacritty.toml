@@ -1,4 +1,4 @@
-import = ["/home/tolga/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+import = ["/home/tolga/.config/alacritty/catppuccin-mocha.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = false
