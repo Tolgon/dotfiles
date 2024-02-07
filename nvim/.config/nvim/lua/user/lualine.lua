@@ -1,26 +1,40 @@
 local M = {
   "nvim-lualine/lualine.nvim",
-  dependencies = {
-    "AndreM222/copilot-lualine",
-  },
 }
 
 function M.config()
   require("lualine").setup {
     options = {
-      component_separators = { left = "", right = "" },
-      section_separators = { left = "", right = "" },
+      component_separators = "|",
+      section_separators = { left = "", right = "" },
       ignore_focus = { "NvimTree" },
     },
     sections = {
       lualine_a = { { "mode", icon = { "" } } },
       lualine_b = { "branch" },
       lualine_c = { "diagnostics" },
-      lualine_x = { "copilot", "filetype" },
-      lualine_y = { "progress" },
-      lualine_z = {},
+      lualine_x = { "filetype" },
+      lualine_y = {},
+      lualine_z = {
+        {
+          "location",
+          icon = {
+            "",
+            align = "left",
+          },
+        },
+        {
+          "progress",
+          icon = {
+            "",
+            align = "left",
+            -- color = { fg = c.black },
+          },
+          separator = { right = "█", left = { "" } },
+        },
+      },
     },
-    extensions = { "quickfix", "man", "fugitive" },
+    extensions = {},
   }
 end
 
