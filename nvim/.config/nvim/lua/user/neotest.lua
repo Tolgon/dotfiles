@@ -2,15 +2,14 @@ local M = {
   "nvim-neotest/neotest",
   dependencies = {
     "nvim-treesitter/nvim-treesitter",
+    "nvim-neotest/nvim-nio",
     -- general tests
     "vim-test/vim-test",
     "nvim-neotest/neotest-vim-test",
     -- language specific tests
-    "marilari88/neotest-vitest",
-    "nvim-neotest/neotest-python",
     "nvim-neotest/neotest-plenary",
-    "rouge8/neotest-rust",
-    "lawrence-laz/neotest-zig",
+    "nvim-neotest/neotest-jest",
+    "marilari88/neotest-vitest",
     "rcasia/neotest-bash",
   },
 }
@@ -28,11 +27,8 @@ function M.config()
   ---@diagnostic disable: missing-fields
   require("neotest").setup {
     adapters = {
-      require "neotest-python" {
-        dap = { justMyCode = false },
-      },
+      require "neotest-jest",
       require "neotest-vitest",
-      require "neotest-zig",
       require "neotest-vim-test" {
         ignore_file_types = { "python", "vim", "lua", "javascript", "typescript" },
       },
