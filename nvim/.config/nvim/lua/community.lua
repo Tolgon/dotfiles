@@ -9,9 +9,7 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- language support
-  { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.cs" },
   -- misc
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
 }
