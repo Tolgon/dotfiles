@@ -1,5 +1,7 @@
-[colors]
-draw_bold_text_with_bright_colors = false
+#[colors]
+#draw_bold_text_with_bright_colors = false
+[general]
+import = ["rose-pine.toml"]
 
 [env]
 TERM = "xterm-256color"
