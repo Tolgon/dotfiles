@@ -41,11 +41,12 @@ multiplier = 3
 decorations = "full"
 decorations_theme_variant = "Dark"
 dynamic_title = true
+# dynamic_padding = true
 
 [window.dimensions]
 columns = 90
 lines = 25
 
 [window.padding]
-x = 5
-y = 5
+x = 6
+y = 6
